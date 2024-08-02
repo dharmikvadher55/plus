@@ -184,3 +184,14 @@
     </table>
   </body>
   </html>
+
+
+
+  String[] hobbies = request.getParameterValues("hobbies");
+        if (hobbies != null) {
+            System.out.print("Selected hobbies: ");
+            for (String hobby : hobbies) {
+                System.out.print(hobby + " ");
+            }
+            System.out.println();
+        }
